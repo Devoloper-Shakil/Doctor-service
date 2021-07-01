@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Abouts from "../../../src/img/about.jpg";
 import "./About.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const About = () => {
+
+    useEffect(()=>{
+        AOS.init(
+            {
+                offset: 100,
+                duration: 1000,
+                easing: 'ease-in-sine',
+                delay: 100,
+              }
+        )
+    })
     return (
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
