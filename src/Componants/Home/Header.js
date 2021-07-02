@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Header.css"
 import logo from '../../img/logo.png';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -17,19 +18,19 @@ const Header = () => {
 
                     <nav id="navbar" class="navbar order-last order-lg-0">
                         <ul>
-                            <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-                            <li><a class="nav-link scrollto" href="#about">About</a></li>
-                            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                            <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-                            <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+                            <li><Link class="nav-link scrollto " to="home">Home</Link></li>
+                            <li><Link class="nav-link scrollto" to="about">About</Link></li>
+                            <li><Link class="nav-link scrollto" to="services">Services</Link></li>
+                            <li><Link class="nav-link scrollto" to="departments">Departments</Link></li>
+                            <li><Link class="nav-link scrollto" to="doctors">Doctors</Link></li>
                             
-                            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                            <li><Link class="nav-link scrollto" to="contact">Contact</Link></li>
                         </ul>
                         <i class="bi bi-list mobile-nav-toggle"></i>
                     </nav>
                 
 
-                    <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+                    <Link to="appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</Link>
 
                 </div>
             </header>

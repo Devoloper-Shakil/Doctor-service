@@ -8,8 +8,6 @@ import Count from "./Count";
 import Advice from "./Advice";
 import Testimonials from "./Testimonials";
 import Quertion from "./Quertion";
-import Footer from "./Footer";
-
 
 
 
@@ -17,8 +15,6 @@ const Home = () => {
     return (
         <div>
 
-            <TopBar></TopBar>
-            <Header></Header>
             <Slider></Slider>
             <Services></Services>
             <About></About>
@@ -26,10 +22,7 @@ const Home = () => {
             <Advice></Advice>
             <Testimonials></Testimonials>
             <Quertion></Quertion>
-            <Footer></Footer>
-
-            
-
+     
 
         </div>
     );
